@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body onload="tanggal()" onunload="tutup()">
+    <script type="text/javascript">
+      <!-- Hide From browser that do not understand javascropt
+      function tanggal(){
+        var d = new Date();
+        var y = d.getFullYear();
+        var m = d.getMonth() + 1;
+        var d = d.getDate();
+        var t = d + '/' + m + '/' + y + ' ';
+        defaultStatus = "Anda Datang Pada Tanggal " + t + ".";
+        alert ("Terima Kasih");
+      }
+      function timer(){
+        var d = new Date();
+        var jam = d.getHours();
+        var menit = d.getMinutes();
+        var detik = d.getSeconds();
+        var strwaktu = (jam<10)?"0"+jam:jam;
+        strwaktu +=(menit<10)?"0"+menit:" : "+menit;
+        strwaktu +=(detik<10)?"0"+detik:" : "+detik;
+        document.f.txtwaktu.value="      "+strwaktu;
+        setTimeout("timer()",200);
+      }
+      function tutup(){
+        window.alert("Terimakasih Telah Berkunjung \n Jangan Lupa Datang Kembali Ya.");
+      }
+      //end hiding -->
+    </script>
+    <h1 align="center">Terima Kasih  </h1>
+    <hr width="600" color="black" noshade size="10">
+    <font face="arial">
+    <h3 align="center">Pesan akan di balas 2 x 24 Jam </h3>
+    <center>
+      <form name="f">
+        <h4 align="center"><a href="index.html">Kembali Ke Website</a></h4>
+        <input type="text" size="16" name="txtwaktu">
+        <hr width="600" color="black" noshade size="2">
+      </form>
+      <script type="text/javascript">timer()</script>
+    </center>
+  </body>
+</html>
